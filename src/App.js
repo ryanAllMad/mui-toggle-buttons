@@ -41,14 +41,19 @@ function App() {
           <Button
             variant='bold'
             size='large'
-            sx={{ mt: 2, ml: 2 }}
+            sx={{ ml: 2 }}
             onClick={onDelete}
             disabled={deletAble}
             aria-pressed={deletAble}
             startIcon={<DeleteIcon />}
           >
             {deletAble === true ? (
-              <CircularProgress style={{ width: '20px', height: '20px' }} />
+              <>
+                <CircularProgress style={{ width: '20px', height: '20px' }} />
+                <div className='visually-hidden'>
+                  Deleting
+                </div>
+              </>
             ) : (
               'Delete'
             )}
@@ -56,14 +61,19 @@ function App() {
           <Button
             variant='bold'
             size='large'
-            sx={{ mt: 2, ml: 2 }}
+            sx={{ ml: 2 }}
             onClick={onSend}
             disabled={sendable}
             aria-pressed={sendable}
             endIcon={<SendIcon />}
           >
             {sendable === true ? (
-              <CircularProgress style={{ width: '20px', height: '20px' }} />
+              <>
+                <CircularProgress style={{ width: '20px', height: '20px' }} />
+                <div className='visually-hidden'>
+                  Sending
+                </div>
+              </>
             ) : (
               'Send'
             )}
@@ -72,17 +82,16 @@ function App() {
             aria-pressed={likeable}
             variant='bold'
             size='large'
-            sx={{ mt: 2, ml: 2 }}
-            // href='/#'
-            // classes
-            // component="div"
-            // fullWidth={true}
+            sx={{ ml: 2 }}
             disabled={likeable}
             onClick={onLike}
             startIcon={<ThumbUpOffAltIcon />}
           >
             {likeable === true ? (
-              <CircularProgress style={{ width: '20px', height: '20px' }} />
+              <>
+                <CircularProgress style={{ width: '20px', height: '20px' }} />
+                <div className='visually-hidden'>Liking</div>
+              </>
             ) : (
               'Like'
             )}

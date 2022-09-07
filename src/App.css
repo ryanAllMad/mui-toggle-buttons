@@ -1,10 +1,18 @@
-button {
-  font-size: 40px;
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden !important;
 }
 [aria-pressed] {
     position: relative;
     top: -0.25rem;
     left: -0.25rem;
+    width: 125px;
+    height: 40px;
 }
 [aria-pressed]:focus, button:disabled {
     outline: 2px solid transparent;
