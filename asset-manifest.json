@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mui-toggle-buttons/static/css/main.ad53b38d.css",
+    "main.js": "/mui-toggle-buttons/static/js/main.7ca72c46.js",
+    "index.html": "/mui-toggle-buttons/index.html",
+    "main.ad53b38d.css.map": "/mui-toggle-buttons/static/css/main.ad53b38d.css.map",
+    "main.7ca72c46.js.map": "/mui-toggle-buttons/static/js/main.7ca72c46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad53b38d.css",
+    "static/js/main.7ca72c46.js"
+  ]
+}
