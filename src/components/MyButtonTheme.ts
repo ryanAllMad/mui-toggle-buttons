@@ -5,7 +5,7 @@ const MyButtonTheme = createTheme({
     MuiButton: {
       variants: [
         {
-          props: { variant: 'bold' },
+          props: { variant: 'outlined' },
           style: {
             fontWeight: 'bold',
             border: '4px solid black',
