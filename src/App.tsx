@@ -39,7 +39,6 @@ function App() {
       <StyledEngineProvider injectFirst>
         <ThemeProvider theme={MyButtonTheme}>
           <Button
-            variant='bold'
             size='large'
             sx={{ ml: 2 }}
             onClick={onDelete}
@@ -59,7 +58,6 @@ function App() {
             )}
           </Button>
           <Button
-            variant='bold'
             size='large'
             sx={{ ml: 2 }}
             onClick={onSend}
@@ -80,7 +78,6 @@ function App() {
           </Button>
           <Button
             aria-pressed={likeable}
-            variant='bold'
             size='large'
             sx={{ ml: 2 }}
             disabled={likeable}
